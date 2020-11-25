@@ -1,11 +1,15 @@
 <?php
+
 namespace app\controllers;
+
 use app\core\Controller;
 use app\core\Request;
 use app\models\Candidate;
 use app\models\User;
 use Rakit\Validation\Validator;
-class CandidateController extends Controller {
+
+class CandidateController extends Controller 
+{
 	public function index() {
 		$candidates = Candidate::where('role', 'candidate')->get();
 		$this->view->render('candidate/index', compact('candidates'));

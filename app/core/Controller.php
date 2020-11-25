@@ -1,7 +1,7 @@
 <?php
 
 namespace app\core;
-echo "hello";
+
 use app\core\View;
 
 abstract class Controller {

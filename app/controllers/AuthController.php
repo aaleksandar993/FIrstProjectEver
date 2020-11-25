@@ -1,8 +1,11 @@
 <?php
+
 namespace app\controllers;
+
 use app\core\Controller;
 use app\models\User;
 use Rakit\Validation\Validator;
+
 class AuthController extends Controller {
 	public function login() {
 		$validator = new Validator;
